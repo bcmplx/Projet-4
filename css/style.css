@@ -1,0 +1,1206 @@
+/* line 5, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.99);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 15, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+a,
+button {
+  transition: all .3s ease-in-out;
+  outline: none !important;
+  color: #575757;
+}
+
+/* line 22, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 27, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+#page-loading-blocs-notifaction {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: rgba(255, 255, 255, 0.99) url("../img/pageload-spinner.gif") no-repeat center center;
+}
+
+/* line 36, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bloc {
+  width: 100%;
+  clear: both;
+  background: 50% 50% no-repeat;
+  padding: 0 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 47, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bloc .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 52, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bloc-lg {
+  padding: 100px 50px;
+}
+
+/* line 56, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bloc-md {
+  padding: 50px;
+}
+
+/* line 60, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bloc-sm {
+  padding: 20px 50px;
+}
+
+/* line 63, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bg-repeat {
+  background: repeat;
+}
+
+/* line 67, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.texture-paper::before {
+  background: url("../img/texture-paper.png");
+  background-size: 280px 280px;
+}
+
+/* line 71, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.banniere-texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 79, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.b-parallax {
+  background-attachment: fixed !important;
+}
+
+/* line 83, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 87, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc button:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 91, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .icon-round,
+.d-bloc .icon-square,
+.d-bloc .icon-rounded,
+.d-bloc .icon-semi-rounded-a,
+.d-bloc .icon-semi-rounded-b {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 99, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .divider-h span {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 103, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .a-btn,
+.d-bloc .header__nav a,
+.d-bloc .header__nav--logo,
+.d-bloc a .icon-sm,
+.d-bloc a .icon-md,
+.d-bloc a .icon-lg,
+.d-bloc a .icon-xl,
+.d-bloc h1 a,
+.d-bloc h2 a,
+.d-bloc h3 a,
+.d-bloc h4 a,
+.d-bloc h5 a,
+.d-bloc h6 a,
+.d-bloc p a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 120, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .a-btn:hover,
+.d-bloc .header__nav a:hover,
+.d-bloc .header__nav--logo:hover,
+.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-md,
+.d-bloc a:hover .icon-lg,
+.d-bloc a:hover .icon-xl,
+.d-bloc h1 a:hover,
+.d-bloc h2 a:hover,
+.d-bloc h3 a:hover,
+.d-bloc h4 a:hover,
+.d-bloc h5 a:hover,
+.d-bloc h6 a:hover,
+.d-bloc p a:hover {
+  color: white;
+}
+
+/* line 137, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .navbar-toggle .icon-bar {
+  background: white;
+}
+
+/* line 141, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .btn-wire,
+.d-bloc .btn-wire:hover {
+  color: white;
+  border-color: white;
+}
+
+/* line 147, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 151, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel button:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 155, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel icon {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 159, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .divider-h span {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 163, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .a-btn {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 167, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .a-btn:hover {
+  color: black;
+}
+
+/* line 171, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .btn-wire,
+.d-bloc .panel .btn-wire:hover {
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 177, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel,
+.l-bloc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 182, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel button:hover,
+.l-bloc button:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 187, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.l-bloc .icon-round,
+.l-bloc .icon-square,
+.l-bloc .icon-rounded,
+.l-bloc .icon-semi-rounded-a,
+.l-bloc .icon-semi-rounded-b {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 195, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .divider-h span,
+.l-bloc .divider-h span {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 200, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .a-btn,
+.l-bloc .a-btn,
+.l-bloc .header__nav a,
+.l-bloc .header__nav--logo,
+.l-bloc a .icon-sm,
+.l-bloc a .icon-md,
+.l-bloc a .icon-lg,
+.l-bloc a .icon-xl,
+.l-bloc h1 a,
+.l-bloc h2 a,
+.l-bloc h3 a,
+.l-bloc h4 a,
+.l-bloc h5 a,
+.l-bloc h6 a,
+.l-bloc p a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 218, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .a-btn:hover,
+.l-bloc .a-btn:hover,
+.l-bloc .header__nav a:hover,
+.l-bloc .header__nav--logo:hover,
+.l-bloc a:hover .icon-sm,
+.l-bloc a:hover .icon-md,
+.l-bloc a:hover .icon-lg,
+.l-bloc a:hover .icon-xl,
+.l-bloc h1 a:hover,
+.l-bloc h2 a:hover,
+.l-bloc h3 a:hover,
+.l-bloc h4 a:hover,
+.l-bloc h5 a:hover,
+.l-bloc h6 a:hover,
+.l-bloc p a:hover {
+  color: black;
+}
+
+/* line 236, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.l-bloc .navbar-toggle .icon-bar {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 240, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.d-bloc .panel .btn-wire,
+.d-bloc .panel .btn-wire:hover,
+.l-bloc .btn-wire,
+.l-bloc .btn-wire:hover {
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 247, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.footer {
+  background: #F3976C;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 251, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.footer li:hover {
+  color: #575757;
+  text-decoration: none;
+}
+
+/* line 255, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.voffset {
+  margin-top: 30px;
+}
+
+/* line 259, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.voffset-lg {
+  margin-top: 80px;
+}
+
+/* line 263, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.row-no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 268, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.row.row-no-gutters > [class^="col-"],
+.row.row-no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 273, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.banniere-img {
+  background-image: url("../img/la-chouette-agence-banniere.jpg");
+  background-repeat: no-repeat;
+  background-size: auto !important;
+}
+
+/* line 278, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.presentation {
+  background-position-y: top;
+}
+
+/* line 281, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.objectifs {
+  background-image: url("../img/image-de-presentation.bmp");
+}
+
+/* line 284, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav {
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+/* line 288, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav:before, .header__nav:after {
+  content: '';
+  height: 1px;
+  background: #cccccc;
+  width: 65px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+/* line 296, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav--logo {
+  height: auto;
+  padding: 3px 15px;
+  font-size: 25px;
+  font-weight: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+/* line 305, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav--logo img {
+  max-height: 200px;
+  margin: 0 5px 0 0;
+  display: inline;
+  min-width: 100px;
+  height: 40px;
+}
+
+/* line 313, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.nav-center .header__nav--logo img {
+  margin: 0;
+}
+
+/* line 317, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav .header__nav--menu {
+  float: right;
+  z-index: 1;
+}
+
+/* line 322, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav--menu > li {
+  float: left;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+/* line 328, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.open .dropdown-menu > li > a {
+  text-align: inherit;
+}
+
+/* line 337, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.navbar-toggle {
+  margin: 10px 10px 0 0;
+  border: 0px;
+}
+
+/* line 342, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+
+/* line 346, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
+
+/* line 351, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.nav-invert .header__nav .header__nav--menu {
+  float: left;
+}
+
+/* line 355, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.nav-invert,
+.nav-invert .header__nav--logo {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  /* line 366, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav--menu > li .dropdown-menu a,
+  .header__nav--menu > li .dropdown-menu a:hover {
+    color: #484848;
+  }
+  /* line 370, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-invert .header__nav--menu {
+    left: 0;
+    right: 0;
+  }
+  /* line 374, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center {
+    text-align: center;
+  }
+  /* line 377, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center {
+    width: 100%;
+  }
+  /* line 380, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center,
+  .nav-center .header__nav--logo,
+  .nav-center .header__nav--menu > li {
+    float: none;
+    display: inline-block;
+  }
+  /* line 386, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center .header__nav--menu {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  /* line 393, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center.mini-nav .navbar-toggle {
+    float: none;
+    margin: 10px auto 0;
+  }
+}
+
+/* line 399, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav--menu > li > .dropdown a {
+  background: none !important;
+  display: block;
+  padding: 14px 15px;
+}
+
+/* line 405, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.header__nav .caret {
+  margin: 0 5px;
+}
+
+/* line 409, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.dropdown-menu .dropdown-menu {
+  top: -8px;
+  left: 100%;
+}
+
+/* line 414, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.dropdown-menu .dropmenu-flow-right {
+  top: 100%;
+  left: 0;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 422, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.dropdown-menu .dropdown span {
+  border: 4px solid black;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin: 6px -5px 0 0 !important;
+  float: right;
+}
+
+/* line 431, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.mg-md {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 436, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.mg-lg {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* line 441, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn {
+  margin: 0 5px 5px 0;
+}
+
+/* line 445, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn.pull-right {
+  margin: 0 0 5px 5px;
+}
+
+/* line 456, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+button {
+  outline: none !important;
+}
+
+/* line 460, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn-radius {
+  border-radius: 40px;
+}
+
+/* line 464, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn-clean {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+/* line 470, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.presentation__logo {
+  width: 100px;
+}
+
+/* line 473, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.services__top--text {
+  padding: 0px 193px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.61);
+  margin: 10px 0;
+}
+
+/* line 479, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.services__mid--text {
+  color: #575757;
+}
+
+/* line 481, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.icon-md {
+  font-size: 30px !important;
+}
+
+/* line 484, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.services__bot--text {
+  padding: 0px 55px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.61);
+  font-style: italic;
+}
+
+/* line 490, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.services__bot--nom {
+  font-size: 15px;
+}
+
+/* line 493, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.icon-lg {
+  font-size: 60px !important;
+}
+
+/* line 497, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.sm-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 501, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.panel-sq,
+.panel-sq .panel-heading,
+.panel-sq .panel-footer {
+  border-radius: 0;
+}
+
+/* line 507, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.panel-rd {
+  border-radius: 30px;
+}
+
+/* line 511, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.panel-rd .panel-heading {
+  border-radius: 29px 29px 0 0;
+}
+
+/* line 515, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.panel-rd .panel-footer {
+  border-radius: 0 0 29px 29px;
+}
+
+/* line 519, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.form-control {
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+}
+
+/* line 524, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: 500;
+  transition: all .3s ease-in-out;
+}
+
+/* line 535, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.scrollToTop span {
+  margin-top: 6px;
+}
+
+/* line 539, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.showScrollTop {
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 544, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+a[data-lightbox] {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+/* line 550, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+a[data-lightbox]:hover::before {
+  content: "+";
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  font-weight: 100;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+/* line 568, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+a[data-lightbox]:hover img {
+  opacity: 0.6;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
+/* line 574, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+#lightbox-modal {
+  display: flex;
+  align-items: center;
+}
+
+/* line 579, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+#lightbox-modal .modal-dialog {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 0;
+}
+
+/* line 585, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+#lightbox-modal .modal-dialog img {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+/* line 590, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.lightbox-caption {
+  padding: 20px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 5px;
+}
+
+/* line 600, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.close-lightbox {
+  color: #FFF;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  line-height: 30px;
+  padding: 0 9px 5px;
+  opacity: 0.3;
+}
+
+/* line 614, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.close-lightbox:hover,
+.next-lightbox:hover,
+.prev-lightbox:hover {
+  opacity: 1.0;
+  color: #FFF;
+}
+
+/* line 621, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.next-lightbox,
+.prev-lightbox {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .2s ease-in-out;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+/* line 633, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.next-lightbox {
+  padding: 6px 8px 1px 13px;
+  right: 25px;
+}
+
+/* line 638, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.prev-lightbox {
+  padding: 6px 13px 1px 10px;
+  left: 25px;
+}
+
+/* line 643, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.snapshot-lb .modal-body {
+  padding-bottom: 45px;
+}
+
+/* line 647, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.snapshot-lb .lightbox-caption {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  background: none;
+}
+
+/* line 653, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+.btn {
+  font-family: "helvetica";
+  font-weight: 400;
+  color: #575757;
+}
+
+/* line 665, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.container {
+  max-width: 1000px;
+}
+
+/* line 669, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.hero-bloc-text-sub {
+  font-size: 36px;
+}
+
+/* line 673, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.statement-bloc-text {
+  line-height: 26px;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  max-width: 520px;
+  margin: auto auto auto auto;
+}
+
+/* line 683, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+p {
+  font-size: 11px;
+}
+
+/* line 687, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.tight-width-whitespace {
+  max-width: 600px;
+  margin: auto auto auto auto;
+}
+
+/* line 692, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+h1 {
+  color: #F3976C;
+  font-size: 32px;
+  font-family: "helvetica";
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 700, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.cta-hero {
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.99) !important;
+  text-transform: uppercase;
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* line 709, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.social {
+  max-width: 400px;
+  margin: auto auto auto auto;
+  color: rgba(255, 255, 255, 0.6) !important;
+  transition: all .01s ease-in-out;
+}
+
+/* line 715, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.social:hover {
+  color: rgba(255, 255, 255, 0.99) !important;
+}
+
+/* line 719, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+h2 {
+  font-size: 22px;
+  line-height: 1.4em;
+  color: #F3976C;
+}
+
+/* line 725, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333 !important;
+}
+
+/* line 732, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.med-width-whitespace {
+  max-width: 800px;
+  margin: auto auto auto auto;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+/* line 737, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+h4 {
+  color: #333333 !important;
+}
+
+/* line 741, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.icons {
+  margin-bottom: 14px;
+  margin-top: 24px;
+}
+
+/* line 745, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.portfolio-thumb {
+  margin-bottom: 24px;
+}
+
+/* line 749, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.portfolio-row {
+  margin-bottom: 44px;
+  margin-top: 50px;
+}
+
+/* line 754, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.avatar {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+}
+
+/* line 758, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.black-background {
+  background-color: rgba(165, 147, 99, 0.7);
+  padding: 40px 40px 40px 40px;
+}
+
+/* line 763, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.objectifs a {
+  color: rgba(255, 255, 255, 0.99);
+  font-weight: 900;
+  text-decoration: underline !important;
+  font-size: 11px;
+}
+
+/* line 769, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.objectifs a:hover {
+  transition: all .3s ease-in-out;
+  outline: none !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 774, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.objectifs p {
+  color: rgba(255, 255, 255, 0.99) !important;
+}
+
+/* line 777, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.objectifs__frame {
+  margin-bottom: 10px;
+}
+
+/* line 781, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.realisations__title {
+  font-size: 22px;
+  padding: 0 267px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 18px 0;
+}
+
+/* line 787, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn-atomic-tangerine {
+  background: #F3976C;
+  color: rgba(255, 255, 255, 0.99) !important;
+}
+
+/* line 792, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.btn-atomic-tangerine:hover {
+  background: #c27956 !important;
+  color: rgba(255, 255, 255, 0.99) !important;
+}
+
+/* line 797, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.ltc-white {
+  color: rgba(255, 255, 255, 0.99) !important;
+}
+
+/* line 801, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.ltc-white:hover {
+  color: #cccccc !important;
+}
+
+/* line 805, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.ltc-atomic-tangerine {
+  color: #F3976C !important;
+}
+
+/* line 809, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.ltc-atomic-tangerine:hover {
+  color: #c27956 !important;
+}
+
+/* line 813, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.icon-dark-slate-blue {
+  color: #364577 !important;
+  border-color: #364577 !important;
+}
+
+/* line 818, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bg-dots-bg {
+  background-image: url("../img/dots-bg.png");
+}
+
+/* line 822, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+.bg-lines-h2-bg {
+  background-image: url("../img/lines-h2-bg.png");
+}
+
+@media (max-width: 1024px) {
+  /* line 827, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 831, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc.full-width-bloc,
+  .bloc-tile-2.full-width-bloc .container,
+  .bloc-tile-3.full-width-bloc .container,
+  .bloc-tile-4.full-width-bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  /* line 841, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav .header__nav--menu {
+    max-width: 80%;
+  }
+  /* line 844, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-center.header__nav .header__nav--menu {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 857, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .container {
+    width: 100%;
+  }
+  /* line 860, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .page-container,
+  #hero-bloc {
+    overflow-x: hidden;
+    position: relative;
+  }
+  /* line 865, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc {
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+  }
+  /* line 869, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-group,
+  .bloc-group .bloc {
+    display: block;
+    width: 100%;
+  }
+  /* line 874, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-fill-screen .fill-bloc-top-edge,
+  .bloc-fill-screen .fill-bloc-bottom-edge {
+    padding: 0 20px;
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 883, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .page-container {
+    overflow-x: hidden;
+    position: relative;
+  }
+  /* line 887, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  #disqus_thread {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  /* line 898, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav .header__nav--menu {
+    padding-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    float: none !important;
+  }
+  /* line 903, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .navbar.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 907, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav--menu {
+    position: inherit;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+  }
+  /* line 913, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav--menu > li {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding-left: 15px;
+    width: 100%;
+  }
+  /* line 921, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav--menu > li:hover {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  /* line 924, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .dropdown .dropdown a .caret {
+    float: none;
+    margin: 5px 0 0 10px !important;
+    border: 4px solid black;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  /* line 932, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  #hero-bloc .header__nav .header__nav--menu {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  /* line 935, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  #hero-bloc .header__nav .header__nav--menu a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  /* line 938, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .hero {
+    padding: 50px 0;
+  }
+  /* line 941, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .hero-nav {
+    left: -1px;
+    right: -1px;
+  }
+  /* line 951, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .header__nav--logo img {
+    max-height: 40px;
+    width: auto;
+  }
+  /* line 955, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-invert {
+    float: none;
+    width: 100%;
+  }
+  /* line 959, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .nav-invert .navbar-toggle {
+    float: left;
+    margin-left: 10px;
+  }
+  /* line 963, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 967, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-xxl,
+  .bloc-xl,
+  .bloc-lg {
+    padding: 40px 0;
+  }
+  /* line 972, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-sm,
+  .bloc-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 977, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-tile-2 .container,
+  .bloc-tile-3 .container,
+  .bloc-tile-4 .container,
+  .bloc-fill-screen .fill-bloc-top-edge,
+  .bloc-fill-screen .fill-bloc-bottom-edge {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 985, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .a-block {
+    padding: 0 10px;
+  }
+  /* line 988, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .btn-dwn {
+    display: none;
+  }
+  /* line 991, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .voffset {
+    margin-top: 5px;
+  }
+  /* line 994, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .voffset-md {
+    margin-top: 20px;
+  }
+  /* line 997, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .voffset-lg {
+    margin-top: 30px;
+  }
+  /* line 1000, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  form {
+    padding: 5px;
+  }
+  /* line 1003, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .close-lightbox {
+    display: inline-block;
+  }
+  /* line 1006, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .blocsapp-device-iphone5 {
+    background-size: 216px 425px;
+    padding-top: 60px;
+    width: 216px;
+    height: 425px;
+  }
+  /* line 1012, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .blocsapp-device-iphone5 img {
+    width: 180px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 1019, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1026, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
+  .bloc-mob-center-text {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
