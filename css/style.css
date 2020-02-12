@@ -74,7 +74,7 @@ a:hover, a:focus-visible {
 
 /* line 67, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
 .texture-paper::before {
-  background: url("../img/texture-paper.png");
+  background: url("../img/texture-paper.webp");
   background-size: 280px 280px;
   opacity: 2;
 }
@@ -156,7 +156,7 @@ section {
 
 /* line 129, ../../Code/Openclassrooms/Projet 4 -- La Chouette Agence/Starting website/SASS/style.sass */
 .banniere-img {
-  background-image: url("../img/la-chouette-agence-banniere_min.jpg");
+  background-image: url("../img/la-chouette-agence-banniere_min.webp");
   background-repeat: no-repeat;
   background-size: auto !important;
 }
